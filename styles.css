@@ -1,0 +1,82 @@
+body {
+  overflow: hidden;
+}
+
+svg {
+  max-width: 850px;
+  max-height: 850px;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#graph {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+button {
+  margin: 0 5px 0 5px;
+}
+
+#tooltip {
+  display: none;
+  position: absolute;
+  opacity: 0.95;
+  padding: 20px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  transform: translate(-50%, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#tooltip p {
+  margin: 0;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.sales {
+  font-size: 14px;
+}
+
+rect {
+  stroke: black;
+  stroke-width: 0px;
+}
+
+.label-container {
+  text-align: center;
+  padding: 2px;
+  pointer-events: none;
+}
+
+.label {
+  color: black;
+  margin: 0;
+  font-weight: 600;
+}
+
+#legend rect {
+  opacity: 0.6;
+}
+
